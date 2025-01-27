@@ -1,59 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap'); */
-
-
-/* @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap'); */
-
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&family=Noto+Serif+Bengali:wght@100..900&display=swap');
 
-
-
-
-
-/* .text-blur {
-  display: inline-block;
-  position: relative;
-}
-
-.text-blur::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 40px; 
-  background: linear-gradient(to left, #fff, rgba(255, 255, 255, 0));
-  pointer-events: none;
-}
-.text-blur::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 40px; 
-  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0));
-  pointer-events: none; 
-} */
-
-
-/* fbcbg: 252728;
-    fbbg:1C1C1D
-    textc:#e2e5e9
-
-    border-[#f2f2f2]
-
-    #1c1e21
-
-    white
-    text-color: #080809
-    light
-    text-color: #e2e5e9 */
-
-/* lindkdin
-bgcolor #000000;
-bgcard: #1B1F23
-*/
 
 /* 01. common */
 /* Default Light Theme */
@@ -75,9 +21,7 @@ bgcard: #1B1F23
 
 /* Dark Theme */
 [data-theme="dark"] {
-    /* main color */
     --background-color: #212121;
-    /* --background-color: #252728; */
     --text-color: #e2e5e9;
 
 
@@ -115,7 +59,6 @@ body {
     line-height: 24px;
     letter-spacing: -0.4px;
     font-style: normal;
-    /* border-color: red; */
 }
 
 .container {
@@ -149,11 +92,7 @@ body {
     z-index: 100;
 }
 
-.header__bg {
-    border-bottom: 1px solid rgba(71, 85, 105, 0.1);
-    /*  backdrop-filter: blur(40px);
-    -webkit-backdrop-filter: blur(40px) */
-}
+.header__bg {}
 
 .navbar {
     padding: 13px 0;
@@ -196,71 +135,13 @@ body {
     box-shadow: 0 0 .375rem rgba(0, 0, 0, .1);
 }
 
-.border-b {
+/* .border-b {
     border-color: var(--border-color-200)
-}
+} */
 
-
-/* 03. banner */
-#banner {
-    border-bottom: 1px solid #8080803b;
-    background: linear-gradient(180deg, #f8fafc, rgba(242, 202, 252, .11) 34.69%, rgba(250, 198, 252, .11) 44.06%, rgba(175, 183, 255, .11) 54.48%, rgba(142, 220, 200, .07) 64.9%, #f8fafc 97.95%);
-}
-
-.banner {
-    height: calc(100vh - 1px);
-}
-
-.banner__title {
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing: -1.2px;
-    line-height: 1.2;
-    margin-bottom: 25px;
-}
-
-.banner__title span {
-    color: var(--color-primary);
-}
-
-.banner__description {
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: -0.45px;
-    margin-bottom: 35px;
-}
-
-.banner__btn span {
-    color: #2B2B2B;
-    text-align: center;
-    font-family: Inter;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.banner__left {
-    max-width: 625px;
-    -webkit-max-width: 625px;
-}
-
-.banner__right {
-    max-width: 420px;
-    max-height: 450px;
-}
-
-.banner__right img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background: transparent;
-    border: 1.5px solid rgba(71, 85, 105, .1);
-}
 
 
 .active {
-    /* background-color: #f8fafc; */
-    /* background-color: #f3f3f3; */
     border-bottom: 1px solid var(--active-border);
     border-radius: 0%;
 }
@@ -381,7 +262,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, min-content);
     justify-content: space-between;
-    row-gap: 20px;
+    gap: 16px
 }
 
 
