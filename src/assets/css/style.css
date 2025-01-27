@@ -365,6 +365,9 @@ body {
 
 /* blog css end */
 
+.hello {
+    word-wrap: break-all
+}
 
 @media (min-width: 1020px) {
     .active {
@@ -374,8 +377,33 @@ body {
     }
 }
 
-.bakar {
+.grid__template {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: repeat(4, min-content);
+    justify-content: space-between;
+    row-gap: 20px;
 }
+
+
+/* css media query */
+@media (min-width: 640px) {
+    .grid__template {
+        grid-template-columns: repeat(6, min-content);
+        row-gap: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .grid__template {
+        grid-template-columns: repeat(8, min-content);
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1024px) {}
+
+@media (min-width: 640px) {}
+
+@media (min-width: 1280px) {}
+
+@media (min-width: 1536px) {}

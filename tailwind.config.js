@@ -10,9 +10,6 @@ module.exports = {
       screens: {
         'xs': '400px',
       },
-      fontFamily: {
-        'siliguri': ['', ...defaultTheme.fontFamily.sans],
-      },
       colors: {
         secondary: {
           100: '#242424',
